@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
+
+body {
+    scrollbar-width: none;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+.events-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.events-header-title {
+    text-align: center;
+    max-width: 550px;
+    margin: 40px auto;
+}
+
+.events-header h1 {
+    font-size: 36px;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.events-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.search-form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.search-form button:hover {
+    background-color: darkviolet;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.event {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.event h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.icon {
+    color: blue;
+    padding-right: 5px;
+}
+
+.event-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.event-time-location {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.event button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.event button:hover {
+    background-color: darkviolet;
+}
+
+@media (max-width: 1024px) {
+    .event-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+}

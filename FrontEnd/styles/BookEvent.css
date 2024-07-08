@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+
+.event-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-details-container h1 {
+    font-size: 36px;
+    color: blueviolet;
+}
+
+.event-details-container p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon {
+    color: blueviolet;
+    margin-right: 5px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.booking-form label {
+    font-size: 18px;
+    color: blueviolet;
+}
+
+.booking-form input, .booking-form button {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form input:focus {
+    border-color: blueviolet;
+    outline: none;
+}
+
+.booking-form button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: darkviolet;
+}

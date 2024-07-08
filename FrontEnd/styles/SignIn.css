@@ -1,0 +1,111 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Form container */
+.form-container {
+    padding: 40px;
+    width: 50%;
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.form-container h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: blueviolet;
+    box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+}
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.form-footer a {
+    text-decoration: none;
+    color: blueviolet;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+.button button:hover {
+    background-color: darkviolet;
+}
+
+/* Image */
+.container img {
+    width: 50%;
+    height: 400px;
+    padding-right: 10px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
